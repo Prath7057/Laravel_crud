@@ -49,7 +49,6 @@ class UserController extends Controller
     //for open update form
     public function update(Request $request, user $user)
     {
-        return $request;
         $request->validate([
             'user_name' => 'required|string',
             'user_city' => 'required|string',
