@@ -32,7 +32,7 @@
             @foreach($users as $index => $user)
             <tr>
                 <td>{{ $index + 1 }}</td>
-                <td>{{ $user->user_id }}</td>
+                <td>{{ $user->user_name }}</td>
                 <td>{{ $user->user_gender }}</td>
                 <td>{{ $user->user_city }}</td>
                 <td>
