@@ -35,7 +35,7 @@
 @section('content')
     <div class="w-50 mx-auto">
         <a class="btn btn-primary" href="{{ route('user.index') }}">Back</a>
-        <form action="{{ isset($users) && $users->id ? route('user.update', $users->id) : route('user.store') }}" method="POST">
+        <form action="{{ isset($users) ? route('user.update', $users->user_id) : route('user.store') }}" method="POST">
             @csrf
             @if (isset($users))
                 @method('PUT')
