@@ -18,10 +18,13 @@
                     Name
                 </th>
                 <th>
-                    City
+                    Last Name
                 </th>
                 <th>
                     Gender
+                </th>
+                <th>
+                    City
                 </th>
                 <th>
                     Actions
@@ -33,6 +36,7 @@
             <tr>
                 <td>{{ $index + 1 }}</td>
                 <td>{{ $user->user_name }}</td>
+                <td>{{ $user->user_lname }}</td>
                 <td>{{ $user->user_gender }}</td>
                 <td>{{ $user->user_city }}</td>
                 <td>
